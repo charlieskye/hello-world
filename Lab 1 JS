@@ -1,0 +1,4 @@
+// Maggie Wei, COMP 2015
+
+document.body.getElementById("cat").width = "50";
+document.body.getElementById("bird").width = "50";
