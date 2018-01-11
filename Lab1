@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script defer="defer" src="maggie-wei.js"></script>
+    <script>
+    window.alert(navigator.appName);
+    var x = 10;
+    var y = 20;
+    alert(x + y);
+    </script>
+</head>
+<body>
+		<img src="cat.jpg" id="cat">;
+		<img src="dog.jpg" id="dog">;
+		<img src="bird.jpg" id="bird">;
+
+    <script>
+    document.getElementById("dog").width="150";
+    </script>
+</body>
+</html>
