@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+  <script>
+    var firstName = "Maggie"
+    var lastName = "Wei"
+    alert('My full name is ' + firstName + " " + lastName);
+
+    var currentYear = 2050
+    var birthYear = 2020
+    var ageYears = currentYear - birthYear
+    alert('My age is ' + ageYears);
+
+  </script>
+</body>
+</html>
