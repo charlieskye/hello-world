@@ -1,0 +1,14 @@
+  <script>
+  var now = new Date()
+  var summerOlympics = new Date(2020, 6, 24, 20)
+
+  var msec = summerOlympics - now
+
+  var sec = msec / 1000
+  var mins = sec / 60
+  var hours = mins / 60
+  var days = hours / 24
+  var weeks = days / 7
+
+  alert(Math.round(weeks))
+  </script>
