@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<head>
+</head>
+<body>
+<script>
+
+percent = 75
+
+if(isNaN(percent)) {
+	alert('error')
+} else if(percent > 100) {
+	alert('too high error')
+} else if(percent < 0) {
+	alert('too low error')
+} else if(percent >=75) {
+	alert('A')
+} else if(percent >=50) {
+	alert('B')
+} else {
+	alert('fail')
+}
+</script>
+</body>
+</html>
