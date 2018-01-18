@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+  <script>
+    window.onload = function() {
+
+    var now = new Date();
+    var christmas = new Date(2018, 11, 25)
+
+    var msec = christmas - now;
+    var sec = msec / 1000;
+    var mins = sec / 60;
+    var hours = mins / 60;
+    var days = hours / 24;
+    alert("There are " + (Math.round(days)) + " left until it's Christmas 2018.");
+
+    var hockeyTeams = ['Canucks', 'Rangers', 'Kings', 'Devils', 'Oilers']
+    for(i=0; i<hockeyTeams.length; i++) {
+      if(hockeyTeams[i].indexOf("an") >=0) {
+        alert(hockeyTeams[i]);
+      }
+    }
+
+    for(i=0; i<document.images.length; i++) {
+      document.images[i].style.border="5px red solid";
+    }
+
+    for(i=0; i<document.getElementsByTagName('img').length; i++) {
+      document.getElementsByTagName('img')[i].style.width="100px";
+    }
+
+  }
+  </script>
+
+</head>
+<body>
+  <img src ="cat.jpg" id="cat" name="cat">
+  <img src = "dog.jpg" id="dog" name="dog">
+  <img src = "bird.jpg" id="bird" name="bird">
+
+</body>
+</html>
