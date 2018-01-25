@@ -1,0 +1,54 @@
+<html>
+<head>
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('img').click(function() {
+                $(this).css('border-style', 'solid', '2px')
+                $(this).css('border-color','red')
+            })
+        });
+
+       $(function() {
+        $('#im1, #im2, #im3').mouseover(function() {
+            $(this).css('width', '100px')
+        })
+       });
+
+       $(function() {
+        $('p').dblclick(function() {
+          $(this).css('color', 'blue')
+        })
+      });
+
+      $(function() {
+        $('#p4, #p5').mouseover(function() {
+          $(this).css('background-color', 'yellow')
+        })
+      });
+
+
+    </script>
+</head>
+<body>
+  <div id="div1">
+    <img src="cat.jpg" id="im1" name="im1">
+    <img src="dog.jpg" id="im2" name="im2">
+    <img src="fish.jpg" id="im3" name="im3">
+  </div>
+  <div id="div2">
+    <p id="p1">The human species' use of technology began with the conversion of natural resources into simple tools.</p>
+    <p id="p2">The prehistorical discovery of the ability to control fire increased the available sources of food and the invention of the wheel helped humans in travelling in and controlling their environment.</p>
+    <p id="p3">Recent technological developments, including the printing press, the telephone, and the Internet, have lessened physical barriers to communication and allowed humans to interact freely on a global scale.</p>
+  </div>
+  <div id="div 3">
+      <p id="p4">Recent technological developments, including the printing press, the telephone, and the Internet, have lessened physical barriers to communication and allowed humans to interact freely on a global scale.</p>        <p id="p5">Philosophical debates have arisen over the present and future use of technology in society, with disagreements over whether technology improves the human condition or worsens it.</p>
+      <img src="bird.jpg" id="im4" name="im4">
+      <img src="turtle.jpg" id="im5" name="im5">
+    </div>
+</body>
+</html>
