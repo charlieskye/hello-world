@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<head>
+  <title>Universe</title>
+
+  <link rel="stylesheet" href="maggie-wei_lab4.css">
+  <link rel="stylesheet" href="style1.css">
+  <!-- <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style3.css"> -->
+
+  <!-- Question 1 -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function() {
+        $("#accordion").accordion();
+      });
+  </script>
+
+  <!-- Question 2 -->
+  <!-- <script src="https://designreviver.com/wp-content/uploads/2008/11/jq.js"></script> -->
+  <script src="https://designreviver.com/wp-content/uploads/2008/11/jq.date.js"></script>
+
+  <script>
+  $(document).ready(function() {
+    $('#birthday input#dob').datepicker({ dateFormat: 'D, M d, yy', showOn: 'button', buttonImage: 'calendar.jpg', buttonImageOnly: true }).css('background-color', 'lightblue');
+    });
+  </script>
+
+  <!-- Question 3 -->
+  <!-- <script src="jquery.min.js"></script> -->
+  <script src="stylesheetToggle.js"></script>
+
+  <script>
+  $(function()
+  	{
+  		// Call stylesheet init so that all stylesheet changing functions
+  		// will work.
+  		$.stylesheetInit();
+  		// This code loops through the stylesheets when you click the link with
+  		// an ID of "toggler" below.
+  		$('#toggler').bind(
+  			'click',
+  			function(e)
+  			{
+  				$.stylesheetToggle();
+  				return false;
+  			}
+  		);
+  		// When one of the styleswitch links is clicked then switch the stylesheet to
+  		// the one matching the value of that links rel attribute.
+  		$('.styleswitch').bind(
+  			'click',
+  			function(e)
+  			{
+  				$.stylesheetSwitch(this.getAttribute('rel'));
+  				return false;
+  			}
+  		);
+  	}
+  );
+  </script>
+
+  <!-- Question 4 -->
+
+  <!-- Question 5 -->
+
+  <script src="http://malsup.github.io/jquery.corner.js"></script>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+  <script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
+  <script src="http://www.google-analytics.com/urchin.js"></script>
+
+  <script>
+  $(function() {
+    $('#corner').click(function() {
+      $(this).corner("#dynamic");
+    })
+    $('#uncorner').click(function(){
+      $(this).uncorner("#dynamic");
+    });
+  });
+  </script>
+
+  <!-- Question 6 -->
+
+</head>
+<body>
+  <h1>Universe</h1>
+  <img src="galaxy.jpg" id="galaxyimg" alt="image of a milky way">
+
+<div id="accordion">
+  <h2 style="background-color:lightblue">Galaxy</h2>
+  <div>
+    <p>A galaxy is a gravitationally bound system of stars, stellar remnants, interstellar gas, dust, and dark matter. The word galaxy is derived from the Greek galaxias (γαλαξίας), literally "milky", a reference to the Milky Way. Galaxies range in size from dwarfs with just a few hundred million (108) stars to giants with one hundred trillion (1014) stars, each orbiting its galaxy's center of mass.</p>
+  </div>
+  <h2 style="background-color:pink">Milky Way</h2>
+  <div>
+    <p>The Greek philosopher Democritus (450–370 BCE) proposed that the bright band on the night sky known as the Milky Way might consist of distant stars. Aristotle (384–322 BCE), however, believed the Milky Way to be caused by "the ignition of the fiery exhalation of some stars that were large, numerous and close together" and that the "ignition takes place in the upper part of the atmosphere, in the region of the World that is continuous with the heavenly motions."</p>
+  </div>
+  <h2 style="background-color:orange">Starburst</h2>
+  <div>
+    <p>Stars are created within galaxies from a reserve of cold gas that forms into giant molecular clouds. Some galaxies have been observed to form stars at an exceptional rate, which is known as a starburst. If they continue to do so, then they would consume their reserve of gas in a time span less than the lifespan of the galaxy. Hence starburst activity usually lasts for only about ten million years, a relatively brief period in the history of a galaxy. Starburst galaxies were more common during the early history of the Universe, and, at present, still contribute an estimated 15% to the total star production rate.</p>
+  </div>
+  <h2 style="background-color:lightgrey">Other Morphologies</h2>
+  <div>
+    <ul>
+      <li>Peculiar Galaxies</li>
+      <li>Lenticular Galaxies</li>
+      <li>Irregular Galaxies</li>
+      <li>Ultra Diffuse Galaxies</li>
+    </ul>
+  </div>
+  </div>
+  <br><br>
+
+<h3>When's your birthday?  Enter it here for the universe!</h3><br>
+  <form id="birthday" action="#">
+    <fieldset>
+      <legend style="font-size:1.2em">Enter your Birthday</legend>
+    <div class="fields">
+      <div><label for="dob">Date of Birth</label><input type="text" id="dob" name="dob"></div>
+    </div>
+    </fieldset>
+  </form>
+  <br><br>
+
+<h3>Which style do you prefer? Toggle styles below.</h3>
+  <ul>
+    <li><a href="serversideSwitch.html%3Fstyle=style1.html" rel="styles1" class="styleswitch">Style A</a></li>
+    <li><a href="serversideSwitch.html%3Fstyle=style2.html" rel="styles2" class="styleswitch">Style B</a></li>
+    <li><a href="serversideSwitch.html%3Fstyle=style3.html" rel="styles3" class="styleswitch">Style C</a></li>
+  </ul>
+  <br><br>
+
+  <h3>Editable text</h3>
+  <br><br>
+
+<h3>Corners</h3>
+
+  <button id="dynCorner">Corner</button>
+  <button id="dynUncorner">Uncorner</button>
+<!--
+  <div id="dynamic" style="width: 50em; padding: 30px; border-radius: 10px;"></div>
+  <div id="dynamic" style="width: 50em; padding: 30px; border-radius: 0px;"></div> -->
+  <br>
+
+  <div class="cornerdemo">
+    <div class="jquery-corner" style="position: relative;">
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 28px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 27px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 24px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 23px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 20px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 19px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 16px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 15px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 12px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 11px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 8px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 7px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 4px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 3px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+    </div>
+
+    <p>Dog2 30px</p>
+    <p>$(this).corner("dog2 30px");</p><br><br>
+
+    <div class="jquery-corner" style="position: absolute; margin: 0px; padding: 0px; left: 0px; bottom: 0px; width: 100%;">
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 3px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 4px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 7px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 8px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 11px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 12px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 15px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 16px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 19px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 20px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 23px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 24px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 27px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 28px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+      <div style="overflow: hidden; height: 1px; min-height: 1px; font-size: 1px; background-color: transparent; border-style: none solid; border-color: rgb(255, 255, 255); border-width: 0px 30px;"></div>
+    </div>
+  </div>
+
+  <div id="dynamic"><p>Uncornering!</p><br>
+  </div>
+  <br><br>
+
+<h3>User ID &amp; Password</h3>
+
+  <label style="padding-right:5px; display:block">User ID</label>
+  <input name="" type="text" required="required"><span class="formInfo"><a href="jquery/ajax2.htm?width=475" class="jTip" id="two" name="Your User ID should follow these rules!">Come Again</a></span>
+  <br>
+  <label style="padding-right:5px; display:block">Password</label>
+  <input name="" type="text" required="required"><span class="formInfo"><a href="jquery/ajax.htm?width=375" class="jTip" id="one" name="Password has to follow these rules!">Wait, what?</a></span>
+  <br><br>
+
+  <p>Quantum superposition is a fundamental principle of quantum mechanics. It states that, much like waves in classical physics, any two (or more) quantum states can be added together ("superposed") and the result will be another valid quantum state; and conversely, that every quantum state can be represented as a sum of two or more other distinct states. Mathematically, it refers to a property of solutions to the <a href="jquery/ajax6.htm?width=475" class="jTip" id="six" name="shrodinger">Schrödinger equation</a>; since the Schrödinger equation is linear, any linear combination of solutions will also be a solution.</p><br>
+
+  <p>It should be noted that, in reality, <a href="jquery/ajax4.htm?width=475" class="jTip" id="four" name="superposition">superpositions</a> can never actually be observed - all we can see is the consequences of their existence, after individual waves of a superposition interfere with each other. Thus, we can never observe an atom in its indeterminate state, or being in two places at once, only the resulting consequences, and physical reality is not determined until the act of measurement takes place and “solidifies” the situation into one state or another.</p><br>
+
+  <p>Part of the problem of observing and measuring superpositions is known as <a href="jquery/ajax3.htm?width=475" class="jTip" id="three" name="decoherence">decoherence</a>. Any attempt to measure or obtain knowledge of quantum superpositions by the outside world (or indeed any kind of interaction with their environment, even with just a single photon) causes them to decohere, effectively destroying the superposition and reducing it to a single location or state, and also destroying the ability of its individual states to interfere with each other. Decoherence, then, results in the collapse of the quantum wave function and the settling of a particle into its observed state under classical physics, its transition from quantum to classical behaviour.</p><br>
+
+  <p>Decoherence is also the main reason that <a href="jquery/ajax5.htm?width=475" class="jTip" id="five" name="quantum theory">quantum theory</a> really only applies in practice to the sub-atomic world: in the large-scale world in which we live, it is all but impossible to isolate anything from interaction with its environment, especially given the countless trillions of photons bouncing off every object all the time. Even an object made of just 60 atoms requires extreme cold to prevent it from becoming “classical” rather than "quantum". It is the interaction of quantum objects with the environment that produces what we understand as classical objects, such as cats and tables. Thus, in practice we never observe a quantum system directly; we only observe its effect on its environment.</p>
+
+  <footer>Maggie Wei Productions LTD.</footer><br><br>
+</body>
+</html>
