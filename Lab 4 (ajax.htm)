@@ -1,0 +1,34 @@
+ajax.htm
+<ul>
+<li>1) Password must be <strong>between 6 - 20 characters</strong> long</li>
+<li>2) Password must contain at least <strong>one letter</strong></li>
+<li>3) Password must contain at least <strong>one number</strong></li>
+<li>4) Password <strong>cannot</strong> contain <strong>special characters</strong> (@, %, etc)</li>
+<li>5) Password cannot be the same as the User ID</li>
+<li>6) Password validation is <strong>case sensitive</strong></li>
+</ul>
+
+ajx2.htm
+<p>User IDs can't contain:</p>
+<ul>
+  <li>Any characters except letters, numbers, full stops, asterisks, underscores or dashes</li>
+  <li>Elements that imply an email address or web address - including but not limited to .com, .net, .org, .edu or any variation (for example, _com or -com). However, your user ID can contain an element of an email address or web address that identifies you or your brand. For example, if your web address is xyz.co.uk you can use xyz as an element of your user ID</li>
+  <li>Consecutive underscores</li>
+  <li>An underscore, hyphen or full stop at the beginning or end of a user ID (for example, -cardcollector)</li>
+</ul>
+
+
+ajax3.htm
+<p>The process by which bodies and quantum systems lose some of their more unusual quantum properties (e.g. superposition, or the ability to appear in different places simultaneously) as they interact with their environments. When a particle decoheres, its probability wave collapses, any quantum superpositions disappear and it settles into its observed state under classical physics.</p>
+
+ajax4.htm
+<p>The ability in quantum theory of an object, such as an atom or sub-atomic particle, to be in more than one quantum state at the same time. For example, an object could technically be in more than one place simultaneously as a consequence of the wave-like character of microscopic particles.</p>
+
+ajax5.htm
+<p>The physical theory of objects isolated from their surroundings. Because it is very difficult to isolate large objects, quantum theory (also known as quantum mechanics or quantum physics) is essentially a theory of the microscopic world of atoms and their constituents. Among its main principles are the dual wave-like and particle-like behaviour of matter and radiation (wave-particle duality), and the prediction of probabilities in situations where classical physics predicts certainties. Classical physics provides a good approximation to quantum physics for everyday purposes, typically in circumstances with large numbers of particles.
+</p>
+
+ajax6.htm
+<p>In quantum mechanics, the Schrödinger equation is a mathematical equation that describes the changes over time of a physical system in which quantum effects, such as wave–particle duality, are significant. The equation is a mathematical formulation for studying quantum mechanical systems. It is considered a central result in the study of quantum systems and its derivation was a significant landmark in developing the theory of quantum mechanics.
+</p>
+
